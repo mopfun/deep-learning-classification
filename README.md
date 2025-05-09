@@ -15,7 +15,7 @@ Compiling, Training, and Evaluating the Model
 
 How many neurons, layers, and activation functions did you select for your neural network model, and why?
 Were you able to achieve the target model performance?
-What steps did you take in your attempts to increase model performance?
+What steps did you take in your attempts to increase model performance? "implemented more layers/nuerons to try and increase the accuracy, which is a big feat in itself.
 
 
 ## Final Thoughts
