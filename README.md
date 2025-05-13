@@ -8,7 +8,7 @@ The first thing I did after reading the csv file was clean up the database by dr
 
 Once the get_dummies df has been created, which is in a numerical format, I choose 'Is Successful as my target/feature arrays. The Xz an Y variables I created were then used in the X/y train/test values. From here, I scaled the X/y train/test data set by using the sctandardscaler() function, allowing me next to play around with layers/nuerons which will ultimately help me increase/decrease the accuracy of my data.
 
-Lastly, to get to the accuracy calculation point, I chose to create 4 layers for my dataset, toggling with the units to try and raise the accuracy percentage. Once I decided on the number of layers I was satisfied with, I fitted and trained the model to generate the invidual accuruaccy levels within 100 epochs. Once that finshed runnig, I then ran the accuracy summary as well as saved that dataset into a HDF5 file.
+Lastly, to get to the accuracy calculation point, I chose to create 4 layers for my dataset, after time toggling with the neurons, layers, and activation function, in attempt to increase the accuracy percentage. Once I decided on the number of layers I was satisfied with, I fitted and trained the model to generate the invidual accuruaccy levels within 100 epochs. Once that finshed runnig, I then ran the accuracy summary as well as saved that dataset into a HDF5 file.
 
 
 ## Results: Using bulleted lists and images to support your answers, address the following questions:
