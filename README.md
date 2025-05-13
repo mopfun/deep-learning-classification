@@ -27,6 +27,3 @@ While it took me a lot of trial and error to still not be able to get an accurac
 With more practice and knowledge of the neural network, I'm sure I will be able to get the accuracy up to a higher preference level, but again, there are cons in doing so depending on how much you add within the neurons, layers, and activation functions.
 
 I think another method to consider would be the keras-tuner method since the whole thought behind this method is to enhance the models machine learning through 'tuning' the hyperparameters before the training step. Doing this will allow the optimal combinations to be selected with the sample data, thus ultimately giving you the highest accuracy percentage generated through the machine learning.
-
-
-
