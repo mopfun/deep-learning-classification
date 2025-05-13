@@ -13,6 +13,22 @@ Lastly, to get to the accuracy calculation point, I chose to create 4 layers for
 
 ## Results: Using bulleted lists and images to support your answers, address the following questions:
 
+As mentioned in the summary, I chose 'Is Successful' as my target variable (y) and the rest of the columns as my feature variables (X) to create my new df that is later used to create the dummies set and then the kera squential model.
+
+Because of my how long I was playing around with the number of layers/nuerons, I stuck with just the 4 layers, which generated an accuracy level of 72.92, which isn't ideal, but I'm sure whith even more layers and nuerons, the accuracy level could get well in the 80th percentile.
+
+Here is a snapshot of the final summary evaluation of the dataset:
+268/268 - 0s - 365us/step - accuracy: 0.7292 - loss: 0.5653
+Loss: 0.5653499960899353, Accuracy: 0.7292128205299377
+
+## Final Thoughts
+While it took me a lot of trial and error to still not be able to get an accuracy level of 75% or higher, I would say that is one of the most challenging parts of using this method. That and figuring out the data parameters to ensure the model fits when setting the input_dim variable, otherwise it won't be able to run the model_fit process, which then you woudl use to get teh accuracy and other stats.
+
+
+Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
+
+
+
 Data Preprocessing
 
 What variable(s) are the target(s) for your model? "Is_Successful"
@@ -24,10 +40,4 @@ How many neurons, layers, and activation functions did you select for your neura
 Were you able to achieve the target model performance? No as I was not able to come up with enough nuerons and units to get the target model performance.
 What steps did you take in your attempts to increase model performance? "implemented more layers/nuerons to try and increase the accuracy, which is a big feat in itself.
 
-
-## Final Thoughts
-While it took me a lot of trial and error to still not be able to get an accuracy level of 75% or higher, I would say that is one of the most challenging parts of using this method. That and figuring out the data parameters to ensure the model fits when setting the input_dim variable, otherwise it won't be able to run the model_fit process, which then you woudl use to get teh accuracy and other stats.
-
-
-Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
 
