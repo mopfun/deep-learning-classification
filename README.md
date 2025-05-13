@@ -1,7 +1,6 @@
 # deep-learning-classification
 
 ## Summary
-
 Within this challenge, I started out importing the tensorflow dependency which will ultimately allow me to execute splitting the data, create my X/y train/test variables, perform the keras sequential model, and perform the accuracy function to showcase the accuracy of my data set.
 
 The first thing I did after reading the csv file was clean up the database by dropping the uneccesary columns into a new data frame. From there I dran a quick summary of the unique values within each column. After choosing my focus column APPLICATION TYPE and CLASSIFICATION, I went ahead and cleaned it up so that it is uniformed for when I create a get_dummies formula. 
@@ -12,7 +11,6 @@ Lastly, to get to the accuracy calculation point, I chose to create 4 layers for
 
 
 ## Results
-
 As mentioned in the summary, I chose 'Is Successful' as my target variable (y) and the rest of the columns as my feature variables (X) to create my new df that is later used to create the dummies set and then the kera squential model.
 
 After trying multiple number of nuerons, layers, and different activation functions, I ended up sticking with just the 4 neurons,layers, and activation functions which generated an accuracy level of 72.92%, which isn't ideal, but I'm sure whith even more layers and nuerons, the accuracy level could get well in the 80th percentile. I thoughht it was interesting that while I was playing with the layering, that while increasing the number of nuerons can be helpful, it can also be just as uneccessary as the increased learning also includes the noise within the data, creating an overfitting process. This can ultimately create poor performance on new unseen data.
@@ -20,6 +18,9 @@ After trying multiple number of nuerons, layers, and different activation functi
 Here is a breakdown of the final summary evaluation of the dataset:
 268/268 - 0s - 365us/step - accuracy: 0.7292 - loss: 0.5653
 Loss: 0.5653499960899353, Accuracy: 0.7292128205299377
+
+The first set of numbers is the numbers in which my batch was split into, followed with the processing time, which was 0 seconds to evaluate this process. The 365 value is the microseconds it took to process each batch, the accuracy is the accuracy of the predicted outcome, which I've elaborated on previously. Lastly is the loss value, which is like the margin of error from the prediction. Having a lower value for the loss is normally preferred since you woudl have a smaller MOE, which is what we always try to strive for when analysing data.
+
 
 ## Final Thoughts
 While it took me a lot of trial and error to still not be able to get an accuracy level of 75% or higher, I would say that is one of the most challenging parts of using this method. That and figuring out the data parameters to ensure the model fits when setting the input_dim variable, otherwise it won't be able to run the model_fit process, which then you woudl use to get the accuracy and other stats.
