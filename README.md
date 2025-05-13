@@ -11,7 +11,7 @@ Once the get_dummies df has been created, which is in a numerical format, I choo
 Lastly, to get to the accuracy calculation point, I chose to create 4 layers for my dataset, after time toggling with the neurons, layers, and activation function, in attempt to increase the accuracy percentage. Once I decided on the number of layers I was satisfied with, I fitted and trained the model to generate the invidual accuruaccy levels within 100 epochs. Once that finshed runnig, I then ran the accuracy summary as well as saved that dataset into a HDF5 file.
 
 
-## Results: Using bulleted lists and images to support your answers, address the following questions:
+## Results
 
 As mentioned in the summary, I chose 'Is Successful' as my target variable (y) and the rest of the columns as my feature variables (X) to create my new df that is later used to create the dummies set and then the kera squential model.
 
