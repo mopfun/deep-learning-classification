@@ -2,7 +2,14 @@
 
 ## Summary
 
-Overview of the analysis: Explain the purpose of this analysis.
+Within this challenge, I started out importing the tensorflow dependency which will ultimately allow me to execute splitting the data, create my X/y train/test variables, perform the keras sequential model, and perform the accuracy function to showcase the accuracy of my data set.
+
+The first thing I did after reading the csv file was clean up the database by dropping the uneccesary columns into a new data frame. From there I dran a quick summary of the unique values within each column. After choosing my focus column APPLICATION TYPE and CLASSIFICATION, I went ahead and cleaned it up so that it is uniformed for when I create a get_dummies formula. 
+
+Once the get_dummies df has been created, which is in a numerical format, I choose 'Is Successful as my target/feature arrays. The Xz an Y variables I created were then used in the X/y train/test values. From here, I scaled the X/y train/test data set by using the sctandardscaler() function, allowing me next to play around with layers/nuerons which will ultimately help me increase/decrease the accuracy of my data.
+
+Lastly, to get to the accuracy calculation point, I chose to create 4 layers for my dataset, toggling with the units to try and raise the accuracy percentage. Once I decided on the number of layers I was satisfied with, I fitted and trained the model to geerate the invidual accuruaccy levels within 100 epochs. Once that finshed runnig, I then ran the accuracy summary as well as saved that dataset into a HDF5 file.
+
 
 ## Results: Using bulleted lists and images to support your answers, address the following questions:
 
@@ -14,12 +21,12 @@ What variable(s) should be removed from the input data because they are neither 
 Compiling, Training, and Evaluating the Model
 
 How many neurons, layers, and activation functions did you select for your neural network model, and why?
-Were you able to achieve the target model performance?
+Were you able to achieve the target model performance? No as I was not able to come up with enough nuerons and units to get the target model performance.
 What steps did you take in your attempts to increase model performance? "implemented more layers/nuerons to try and increase the accuracy, which is a big feat in itself.
 
 
 ## Final Thoughts
-While it took me a lot of trial and error to get an accuracy level above 75%, I would say that is one of the most challenging parts of using this method. That and figuring out the data parameters to ensure the model fits when setting the input_dim variable, otherwise it won't be able to run the model_fit process, which then you woudl use to get teh accuracy and other stats.
+While it took me a lot of trial and error to still not be able to get an accuracy level of 75% or higher, I would say that is one of the most challenging parts of using this method. That and figuring out the data parameters to ensure the model fits when setting the input_dim variable, otherwise it won't be able to run the model_fit process, which then you woudl use to get teh accuracy and other stats.
 
 
 Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
